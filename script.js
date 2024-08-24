@@ -5,10 +5,11 @@ let body = document.querySelector('body');
 let randomCol = 1;
 button1.onclick = changeColor;
 let h2 = document.querySelector('h2');
+let colorText = document.getElementById('bold-color-text');
 
 function changeColor() {
     randomCol = Math.floor(Math.random() * colArray.length) // Math.random() picks a random number 0 to <1 (float)
     body.style.backgroundColor = colArray[randomCol];
-    h2.innerText = "Current Color: " + colArray[randomCol];
+    colorText.innerText = colArray[randomCol];
 
 }
